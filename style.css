@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "AnonnymousPro-Bold";
+  src: url(./assets/fonts/AnonymousPro-Bold.ttf);
+}
+@font-face {
+  font-family: "AnonnymousPro-Italic";
+  src: url(./assets/fonts/AnonymousPro-Italic.ttf);
+}
+@font-face {
+  font-family: "AnonnymousPro-Regular";
+  src: url(./assets/fonts/AnonymousPro-Regular.ttf);
+}
+
+.font_bold {
+  font-family: "AnonnymousPro-Bold";
+}
+.font_italic {
+  font-family: "AnonnymousPro-Italic";
+}
+.font_regular {
+  font-family: "AnonnymousPro-Regular";
+}
+
+.header{
+  margin:30px
+}
+
+.nav {
+  list-style-type: none;
+  font-size: 30px;
+  padding: 20px;
+}
+.nav li {
+  display: inline-block;
+  margin-right: 80px;
+}
+.me {
+  font-family: "AnonnymousPro-Bold";
+  font-size: 50px;
+}
+
+body {
+  font-family: "AnonnymousPro-Regular";
+  margin: 0;
+  height: 100%;
+}
+
+.hello {
+}
+
+.hello h3 {
+  width: 80%;
+}
+
+
+.hello .description b {
+  font-family: "AnonnymousPro-Bold";
+}
+
+.hello h1 {
+  font-size: 60px;
+  font-family: "AnonnymousPro-Bold";
+}
+
+.aboutme {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #A3D2CA;
+  border-radius: 10px;
+}
+
+.list-social-media{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-social-media:hover .square{
+  background-color: #89b1aa;
+}
+
+.hello h1 {
+  border-right: .15em solid #A3D2CA;
+  overflow: hidden;
+}
+
+.hello h1:nth-child(2) {
+  white-space: nowrap;
+}
+
+.hello h1:nth-child(1) {
+  margin-bottom: 0;
+  width: 1.5em;
+  -webkit-animation: type .5s steps(20, end);
+  animation: type .5s steps(20, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.hello h1:nth-child(2) {
+  margin-top: 0;
+  width: 10em;
+  opacity: 0;
+  margin-bottom: 0;
+  -webkit-animation: type2 2s steps(20, end);
+  animation: type2 2s steps(20, end);
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.hello h1:nth-child(3) {
+  width: 5em;
+  margin-top: 0;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;;
+  animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #A3D2CA;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #A3D2CA;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.cursor-hand{
+  cursor: pointer;
+}
+
+.image-social-media{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+
+.image-triangle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-triangle svg {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100%{transform: rotate(360deg);}
+}
+
+.image-profile{
+  position: absolute;
+  width: 250px;
+  margin-top: -30px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.triangle-1 svg{
+  margin-left: -150px;
+  height: 200px;
+  animation: spin 10s linear infinite;
+}
+
+.contact-me-button{
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  font-size: 20px;
+  font-family: "AnonnymousPro-Bold";
+  background-color: #A3D2CA;
+}
+
+.contact-me-button:hover {
+  background-color: #89b1aa;
+}
+
+.top-image{
+  display: none;
+}
+
+.name-top {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px){
+  .aboutme { 
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 20px;
+  justify-content: flex-start;
+  }
+
+  .hello{
+    margin-top: 20px;
+  }
+
+  .bottom-image{
+    display: flex;
+  }
+
+  .bottom-image svg {
+    width: 200px;
+  }
+
+  .bottom-image img {
+    width: 100px;
+  }
+  .list-social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: flex-start;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .aboutme { 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    justify-content: flex-start;
+    }
+  
+    .bottom-image{
+      display: none;
+    }
+
+    .nav{
+      display: none;
+    }
+
+    .name-top{
+      display: flex;
+      margin: 20px;
+      font-family: "AnonnymousPro-Bold";
+      text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 702px) {
+  .hello h1{
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  .hello h3 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
