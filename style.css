@@ -39,6 +39,8 @@ body {
   font-family: "AnonnymousPro-Regular";
   margin: 0;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .hello {
@@ -229,11 +231,21 @@ body {
 
 .triangle-1 {
   position: absolute;
-  margin-left: -100px;
+}
+
+.triangle-2 {
+  position: absolute;
+  right: 0;
+  margin-right: -200px;
 }
 
 .triangle-1 svg{
-  margin-left: -150px;
+  margin-left: -200px;
+  height: 200px;
+  animation: spin 10s linear infinite;
+}
+
+.triangle-2 svg{
   height: 200px;
   animation: spin 10s linear infinite;
 }
@@ -264,7 +276,7 @@ body {
   padding: 50px;
 }
 
-.me-content{
+.article-content{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -284,7 +296,7 @@ body {
   width: 300px;
 }
 
-.me-content h1{
+.article-content h1{
   font-size: 60px;
 }
 
@@ -292,6 +304,52 @@ body {
   font-size: 20px;
   font-family: "AnonnymousPro-Regular";
   text-align: justify;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skill-content ul{
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-content ul li {
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-skill{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-skill h1{
+  font-size: 30px;
+}
+
+.item-skill img {
+  width: 50px;
+}
+
+.item-skill-list{
+  display: none;
 }
 
 @media screen and (max-width: 1200px){
@@ -341,11 +399,15 @@ body {
     padding-top: 20px;
     justify-content: flex-start;
     }
+
+    .skill-content ul {
+      flex-direction: column;
+    }
   
     .header {
       margin-left: 30px;
     }
-    
+
     .bottom-image{
       display: none;
     }
