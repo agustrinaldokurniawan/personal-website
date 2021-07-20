@@ -35,12 +35,16 @@
   font-family: "AnonnymousPro-Bold";
 }
 
-body {
+html, body {
   font-family: "AnonnymousPro-Regular";
   margin: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+body{
+  position: relative;
 }
 
 .hello {
@@ -231,12 +235,14 @@ body {
 
 .triangle-1 {
   position: absolute;
+  z-index: -10;
 }
 
 .triangle-2 {
   position: absolute;
   right: 0;
   margin-right: -200px;
+  z-index: -10;
 }
 
 .triangle-1 svg{
