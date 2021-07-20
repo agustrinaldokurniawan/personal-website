@@ -21,14 +21,11 @@
   font-family: "AnonnymousPro-Regular";
 }
 
-.header{
-  margin:30px
-}
-
 .nav {
   list-style-type: none;
   font-size: 30px;
-  padding: 20px;
+  margin:0;
+  padding: 0;
 }
 .nav li {
   display: inline-block;
@@ -36,7 +33,6 @@
 }
 .me {
   font-family: "AnonnymousPro-Bold";
-  font-size: 50px;
 }
 
 body {
@@ -64,6 +60,8 @@ body {
 
 .aboutme {
   padding: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -226,6 +224,12 @@ body {
 .content{
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.triangle-1 {
+  position: absolute;
+  margin-left: -100px;
 }
 
 .triangle-1 svg{
@@ -256,6 +260,39 @@ body {
   display: none;
 }
 
+.me{
+  padding: 50px;
+}
+
+.me-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center ;
+  gap: 20px;
+}
+
+.me-description{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  width: 70%;
+}
+
+.me-description img{
+  width: 300px;
+}
+
+.me-content h1{
+  font-size: 60px;
+}
+
+.me-description p{
+  font-size: 20px;
+  font-family: "AnonnymousPro-Regular";
+  text-align: justify;
+}
 
 @media screen and (max-width: 1200px){
   .aboutme { 
@@ -289,7 +326,11 @@ body {
     align-self: flex-start;
     position: absolute;
   }
+  .me-description img {
+    width: 200px;
+  }
 }
+
 
 @media screen and (max-width: 935px) {
   .aboutme { 
@@ -301,6 +342,10 @@ body {
     justify-content: flex-start;
     }
   
+    .header {
+      margin-left: 30px;
+    }
+    
     .bottom-image{
       display: none;
     }
@@ -315,6 +360,14 @@ body {
       font-family: "AnonnymousPro-Bold";
       text-transform: uppercase;
     }
+
+  .me-description img {
+    width: 150px;
+  }
+
+  .me-description{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 702px) {
@@ -327,5 +380,11 @@ body {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .me-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
