@@ -231,14 +231,12 @@ body {
 
 .triangle-1 {
   position: absolute;
-  z-index: -1;
 }
 
 .triangle-2 {
   position: absolute;
   right: 0;
   margin-right: -200px;
-  z-index: -1;
 }
 
 .triangle-1 svg{
