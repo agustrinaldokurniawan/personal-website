@@ -8,3 +8,7 @@ function showSkill(id) {
         document.getElementById(`${id}-icon`).src = "assets/icons/akar-icons_chevron-down.png"
     }
 }
+
+document.body.scroll = ()=>{
+    console.log("scol")
+}

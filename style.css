@@ -45,12 +45,11 @@ html, body {
 
 body{
   position: relative;
+  overflow-y: scroll;
+  max-height: 100vh;
 }
 
-.hello {
-}
-
-.hello h3 {
+.hello p {
   width: 80%;
 }
 
@@ -376,6 +375,21 @@ body{
   text-align: justify;
 }
 
+footer{
+  background-color: #A3D2CA ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: inline-flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
 
 @media screen and (max-width: 1200px){
   .aboutme { 
@@ -463,7 +477,7 @@ body{
     font-size: 30px;
   }
 
-  .hello h3 {
+  .hello p {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
