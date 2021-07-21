@@ -10,16 +10,25 @@
 
 <body>
     <header class="header">
-        <ul class="nav">
-            <li class="me">Me</li>
-            <li>Skill</li>
-            <li>Qualification</li>
-            <li>Contact</li>
+        <ul class="nav-collapse">
+            <li class="cursor-hand" onclick="openMenu()">
+                <img src="assets/icons/ant-design_menu-outlined.png">
+            </li>
+            <li class="me">Agust</li>
         </ul>
-        <h1 class="name-top">Agust</h1>
+        <ul class="sidenav" id="sidenav">
+            <img class="close" onclick="closeMenu()" src="assets/icons/carbon_close.png">
+            <li onclick="openLink('#skill');closeMenu()" class="cursor-hand">Skill</li>
+            <li onclick="openLink('#qualification');closeMenu()" class="cursor-hand">Qualification</li>
+        </ul>
+        <ul class="nav">
+            <li class="me cursor-hand" onclick="openLink('#aboutme')">Agust</li>
+            <li onclick="openLink('#skill')" class="cursor-hand">Skill</li>
+            <li onclick="openLink('#qualification')" class="cursor-hand">Qualification</li>
+        </ul>
     </header>
     <main>
-        <aside class="aboutme">
+        <aside class="aboutme" id="aboutme">
             <div class="list-social-media">
                 <a href="https://twitter.com/agustrkurniawan" target="_blank">
                     <div class="item-social-media cursor-hand" onclick="">
@@ -55,7 +64,7 @@
                     Technology such as <b>MERN Stack </b> and <b>Mobile Apps</b> using
                     <b>Native Kotlin</b> and Hybrid using <b>React Native</b>.
                 </p>
-                <button class="contact-me-button cursor-hand">Contact Me</button>
+                <button class="contact-me-button cursor-hand" onclick="contactMe()">Contact Me</button>
             </div>
             <div class="image-triangle bottom-image">
                 <svg width="378" height="356" viewBox="0 0 378 356" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +106,7 @@
             </article>
 
 
-            <article class="skill">
+            <article class="skill" id="skill">
                 <div class="triangle-2">
                     <svg width="378" height="356" viewBox="0 0 378 356" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -165,7 +174,7 @@
                 </div>
             </article>
 
-            <article class="qualification">
+            <article class="qualification" id="qualification">
                 <div class="triangle-1">
                     <svg width="378" height="356" viewBox="0 0 378 356" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
